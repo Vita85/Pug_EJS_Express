@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= "Users List"
+  body 
+    style. 
+      body {
+        background-color: #fecfff;
+        } 
+    h1= "Users List"
+    ul 
+      style. 
+        ul {
+          background-color: #fff;
+          }
+      each user in users
+        li 
+          style. 
+            li {
+              list-style-type: decimal;
+            }
+          h3= user.name

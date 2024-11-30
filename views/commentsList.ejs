@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= "Comments List" %></title>
+  </head>
+  <body>
+    <h1><%= "Comments List" %></h1>
+
+    <ul style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; padding: 20px; background-color : #b7b6aa; ">
+      <% comments.forEach((comment) => { %>
+        <li style="border: 2px solid black; width: 300px; list-style: none; padding: 10px 15px;">
+          <%= comment.text %>
+        </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
