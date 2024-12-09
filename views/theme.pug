@@ -1,0 +1,19 @@
+
+doctype html
+html
+  head
+    title= "Custom Theme"
+    link(rel="icon", href="/icons/pug.png")
+    style. 
+      body {
+        background-color: #{chooseTheme === "dark" ? "#333" : "#fff"};
+        color: #{chooseTheme === "dark" ? "#fff" : "000"}
+      }
+  body
+    h1 Choose Theme
+     form(action="/set-theme", method="post")
+      input(type="radio", name="theme", value="light", checked=chooseTheme === "light") 
+      | Light Theme
+      input(type="radio", name="theme", value="dark", checked=chooseTheme === "dark") 
+      | Dark Theme
+      button(type="submit") Submit 

@@ -2,30 +2,38 @@ doctype html
 html
   head
     title= "User by ID"
-  body
+    link(rel="icon", href="/icons/pug.png") 
     style.
       body {
         background-color: #fecfff;
-        } 
-    h1= "User by ID"
-    style.
+      }
       h1 {
         font-size:40px;
         }
-    h3= name.toUpperCase()
-     style.
-      h3 {
+      div {
+        display:flex;
+        align-items: center;
+      }
+       h3 {
         font-size:28px;
         color: red;
         }
-    p= email 
-     style.
       p {
       cursor: pointer;
       font-weight: bold;
         }
-    span= password
-     style.
-      span {
+      img {
+        width: 30px;
+      }
+       span {
         font-style: italic;
         }
+  body
+    h1= "User by ID"
+    div
+      img(src="/icons/pug.png", alt="Pug Icon")
+      h3= name.toUpperCase()
+    p= email 
+    span= password
+ 
+     

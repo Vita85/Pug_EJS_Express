@@ -2,21 +2,26 @@ doctype html
 html
   head
     title= "Users List"
-  body 
-    style. 
+    link(rel="icon", href="/icons/pug.png") 
+    style.
       body {
         background-color: #fecfff;
-        } 
+      }
+      ul {
+        background-color: #fff;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        list-style-type: decimal;
+      }
+      img {
+        width: 20px;
+      }
+  body
     h1= "Users List"
-    ul 
-      style. 
-        ul {
-          background-color: #fff;
-          }
+    ul
       each user in users
-        li 
-          style. 
-            li {
-              list-style-type: decimal;
-            }
+        li
+          img(src="/icons/pug.png", alt="Pug Icon")
           h3= user.name

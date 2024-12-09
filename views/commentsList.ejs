@@ -2,10 +2,11 @@
 <html>
   <head>
     <title><%= "Comments List" %></title>
+    <link rel="icon" href="/icons/ejs.png">
   </head>
   <body>
+    <img src="/icons/ejs.png" alt="" style="width: 50px;">
     <h1><%= "Comments List" %></h1>
-
     <ul style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; padding: 20px; background-color : #b7b6aa; ">
       <% comments.forEach((comment) => { %>
         <li style="border: 2px solid black; width: 300px; list-style: none; padding: 10px 15px;">
